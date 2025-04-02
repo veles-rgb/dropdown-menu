@@ -1,5 +1,6 @@
 // index.js
+import "../styles/reset.css";
 import "../styles/styles.css";
-import { test } from "./modules/test.js";
+import { activateDropdown } from "./modules/vdropdown";
 
-console.log(test);
+activateDropdown();

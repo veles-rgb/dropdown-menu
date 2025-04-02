@@ -1,4 +1,78 @@
 /* styles.css */
-body {
-    background-color: rebeccapurple;
+.v-dropdown-container {
+    display: flex;
+    margin: 10px;
+    gap: 1rem;
+}
+
+.v-dropdown-menu {
+    /* Width size of overall menu button and items */
+    width: 10rem;
+}
+
+.v-dropdown-obj {
+    width: 100%;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: 2px solid black;
+}
+
+.v-dropdown-obj:hover {
+    cursor: pointer;
+}
+
+.v-dropdown-items {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.v-dropdown-item {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(60, 60, 60, 0.4);
+}
+
+.v-dropdown-item>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.v-dropdown-item>a:active {
+    color: white;
+    background-color: black;
+}
+
+.v-dropdown-item:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
+.v-visible {
+    display: flex;
+}
+
+.v-active {
+    color: white;
+    background-color: black;
 }
